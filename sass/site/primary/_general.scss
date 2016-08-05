@@ -1,0 +1,33 @@
+/*=============================================
+=            General Pages & Posts            =
+=============================================*/
+
+.sticky {
+	display: block;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-links {
+	clear: both;
+	@include rem(margin, 0 0 15px);
+}
+
+#main {
+	@include rem(padding-top, 60px);
+	@include rem(padding-bottom, 60px);
+}
+
+#primary {
+	float: left;
+	width: 75%;
+	margin-left: 25%
+}

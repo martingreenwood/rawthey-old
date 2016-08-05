@@ -1,0 +1,53 @@
+#secondary {
+	position: fixed;
+	float: left;
+	width: 25%;
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30px;
+	background: $dark-gray;
+	text-align: center;
+
+	.contact {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		width: 100%;
+		padding: 0px 30px;
+		box-sizing: border-box;
+
+		ul {
+			list-style: none;
+			margin: 0;
+			width: 100%;
+			display: block;
+
+
+			li {
+				margin: 0 10px 0 0;
+				display: inline-block;
+				color: $text-color;
+				display: inline-block;
+				float: none;
+
+				&:last-of-type {
+					color: white;
+					margin-right: 0;
+				}
+
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+.widget {
+	@include rem(margin, 0 0 30px);
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
