@@ -25,9 +25,11 @@ get_header();
 
 	<div id="primary" class="content-area">
 
+		<?php if ($ft_image) : ?>
 		<header id="header" class="parallax">
 			<div class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $ft_image; ?>"></div>
 		</header>
+		<?php endif; ?>
 		
 		<main id="main" class="container" role="main">
 

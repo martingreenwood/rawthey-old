@@ -10,7 +10,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
 	<header class="entry-header">
+
+		<?php the_post_thumbnail('full'); ?>
+
 		<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -20,28 +25,22 @@
 
 		if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php rawthey_posted_on(); ?>
-		</div><!-- .entry-meta -->
+			<div class="date">
+				<?php rawthey_posted_on(); ?>
+			</div>
+			<div class="tags">
+				<?php the_tags( '<span>', " ", "</span>" ); ?>
+			</div>
+		</div>
 		<?php
 		endif; ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="entry-content">
 		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'rawthey' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rawthey' ),
-				'after'  => '</div>',
-			) );
+			the_excerpt();
 		?>
-	</div><!-- .entry-content -->
+		<a href="<?php the_permalink(); ?>">Continue Reading</a>
+	</div>
 
-	<footer class="entry-footer">
-		<?php rawthey_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-## -->
+</article>

@@ -1,7 +1,7 @@
 // Typography
 $base-font-family: 'Open Sans', $helvetica;
-$heading-font-family: 'Montserrat', $base-font-family;
-$alt-heading-font-family: 'sarina', $base-font-family;
+$heading-font-family: 'Source Sans Pro', $base-font-family;
+$alt-heading-font-family: $heading-font-family;
 $font-pre: $monospace;
 $font-code: $font-pre;
 
@@ -21,15 +21,16 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$brand-primary: #D0D9C8;
-$brand-secondary: #E5D9C1;
-$brand-tertiary: #372F24;
+$brand-primary: #FF6B6B;
+$brand-secondary: #C44D58;
+$brand-tertiary: #556270;
+$brand-pacifica: #4ECDC4;
 
 $text-color: #878787;
 $text-screen: $text-color;
 $text-input: $text-color;
 
-$dark-gray: #303030;
+$dark-gray: #556270;
 $medium-gray: #999;
 $light-gray: #ddd;
 
@@ -64,8 +65,34 @@ $secondary-background-color: tint($base-border-color, 75%);
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
+$input-bg:           #fff !default;
+$input-color:        #999 !default;
+$input-border:       #ddd !default;
+$input-border-focus: #999 !default;
+$input-label:        #666 !default;
+$input-error:        #ca3c3c !default;
+$input-shadow:       1px 1px 2px #eee inset !default;
+$input-transition:   all .3s ease-in-out !default;
+
+$form-button-background:       #333 !default;
+$form-button-background-hover: #0078e7 !default;
+$form-button-color:            #fff !default;
+
+$form-required: #f00 !default;
+$form-muted:    #858585 !default;
+
+$form-font-size:   16px !default;
+$form-line-height: $form-font-size * 1.5 !default;
+$form-space:       $form-line-height / 2 !default;
+
+$white: #fff !default;
+$gray:  #aaa !default;
+
+
 // Animations
 $base-duration: 150ms;
 $base-timing: ease-in-out;
 
 $base-transition: $base-duration $base-timing;
+
+

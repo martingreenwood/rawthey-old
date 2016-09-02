@@ -31,7 +31,9 @@ get_header();
 				<div class="table">
 					<div class="cell middle">
 						<h1>
-							We make intelligent, beautiful websites that make our clients and their users happy.
+							I'm Martin Greenwood<br>An Independent WordPress Developer, Web Designer &amp; Front End Developer.
+							<br><br>
+							<a class="btn outline" href="<?php echo home_url('/about'); ?>">Learn More</a><a class="btn" href="<?php echo home_url('/start-a-project'); ?>">Get in Touch</a>
 						</h1>
 					</div>
 				</div>
@@ -39,7 +41,7 @@ get_header();
 			</div>
 		</header>
 		
-
+		<?php /*if (have_posts()): ?>
 		<main id="main" class="container" role="main">
 
 			<?php
@@ -51,6 +53,7 @@ get_header();
 			?>
 
 		</main>
+		<?php endif; */ ?>
 	</div>
 
 <?php get_footer();

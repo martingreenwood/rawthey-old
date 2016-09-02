@@ -5,12 +5,16 @@
 .work {
 
 	#main {
-		padding: 0;
-		background: $brand-secondary;
+		padding: 20px;
 
 		#macy {
+
 			.item {
 				position: relative;
+
+				&.testimomial {
+					height: 400px;
+				}
 
 				a {
 					display: block;
@@ -34,17 +38,16 @@
 
 					h2 {
 						color: white;
-						font-size: 30px;
-						line-height: 1.2;
+						font-size: 22px;
 						margin: 0;
 						text-transform: capitalize;
 					}
 
 					h4 {
-						color: white;
+						color: #eeeeee;
 						font-family: $base-font-family;
 						margin: 0;
-						font-size: 20px;
+						font-size: 14px;
 						transition: all $base-transition;
 						max-height: 0;
 						opacity: 0;

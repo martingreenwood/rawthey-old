@@ -21,11 +21,11 @@
 
 	<div class="contact">
 		<ul class="social">
-			<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-			<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-			<li><i class="fa fa-google" aria-hidden="true"></i></li>
-			<li><a href="mailto:<?php echo antispambot( 'studio@rawtheydigital.com' ); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-			<li>01539 621322</li>
+			<!--<li><i class="fa fa-facebook" aria-hidden="true"></i></li>-->
+			<li><a href="https://twitter.com/booleanbiker" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			<li><a href="https://plus.google.com/u/1/+MartinGreenwood42" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+			<li><a href="mailto:<?php echo antispambot( 'helloo@martingreenwood.com' ); ?>"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+			<li>07515 031424</li>
 		</ul>
 	</div>
 

@@ -31,3 +31,30 @@
 	width: 75%;
 	margin-left: 25%
 }
+
+
+/*===================================
+=            SOCIAL WALL            =
+===================================*/
+
+
+.wall {
+
+	#ppsw_social_wall {
+
+		.container {
+
+			.ppsw-card {
+
+				&.timeline {
+					background: $brand-primary;
+					padding: 20px;
+				}
+
+				.caption {
+					background: $brand-pacifica;
+				}
+			}
+		}
+	}
+}

@@ -59,8 +59,12 @@ get_header();
 			?>
 
 			<div class="container content">
-				<h3><?php the_field('project_challange_title'); ?></h3>
-				<?php the_field('project_challange'); ?>
+				<header>
+					<p><?php the_field('project_challange_title'); ?></p>
+				</header>
+				<article>
+					<?php the_field('project_challange'); ?>
+				</article>
 			</div>
 
 		</section>
@@ -78,8 +82,12 @@ get_header();
 
 				<div class="content">
 					<div class="container">
-						<h3><?php the_field('project_solution_title'); ?></h3>
-						<?php the_field('project_solution'); ?>
+						<header>
+							<p><?php the_field('project_solution_title'); ?></p>
+						</header>
+						<article>
+							<?php the_field('project_solution'); ?>
+						</article>
 					</div>
 				</div>
 
@@ -105,8 +113,12 @@ get_header();
 
 				<div class="content">
 					<div class="container">
-						<h3><?php the_field('feature_one_title'); ?></h3>
-						<?php the_field('feature_one'); ?>
+						<header>
+							<p><?php the_field('feature_one_title'); ?></p>
+						</header>
+						<article>
+							<?php the_field('feature_one'); ?>
+						</article>
 					</div>
 				</div>
 
@@ -132,8 +144,12 @@ get_header();
 
 				<div class="content">
 					<div class="container">
-						<h3><?php the_field('feature_two_title'); ?></h3>
-						<?php the_field('feature_two'); ?>
+						<header>
+							<p><?php the_field('feature_two_title'); ?></p>
+						</header>
+						<article>
+							<?php the_field('feature_two'); ?>
+						</article>
 					</div>
 				</div>
 

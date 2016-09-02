@@ -46,7 +46,6 @@
 
 	#main {
 		padding: 0;
-		background-color: white;
 
 		.entry-content {
 			padding: 50px 0;
@@ -113,6 +112,38 @@
 		}
 	}
 
+	section {
+
+		header {
+			@include span-columns(1);
+
+			@include media($medium-screen-up) {
+				@include span-columns(3);
+			}
+
+			@include media($large-screen-up) {
+				@include span-columns(4);
+			}
+
+			p {
+				color: #333;
+			}
+		}
+
+		article {
+			@include span-columns(1);
+
+			@include media($medium-screen-up) {
+				@include span-columns(5);
+			}
+
+			@include media($large-screen-up) {
+				@include span-columns(8);
+			}
+		}
+	}
+
+
 	#challange {
 
 		.content {
@@ -153,15 +184,15 @@
 		background-color: $brand-secondary;
 
 		a {
-			color: $brand-tertiary;
+			color: white;
 			display: block;
 			text-align: center;
 			font-weight: 800;
 
 			i {
 				font-size: 40px;
-				color: $brand-tertiary;
-				background: #b6c4aa;
+				color: white;
+				background: $brand-primary;
 				width: 55px;
 				height: 55px;
 				display: inline-block;

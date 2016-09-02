@@ -1,25 +1,89 @@
+label {
+	color: $input-label;
+	font-weight: 700;
+}
+
 input[type="text"],
+input[type="search"],
+input[type="password"],
+input[type="number"],
 input[type="email"],
 input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: $text-input;
-	border: 1px solid $border-input;
+input[type="tel"],
+input[type="file"],
+textarea,
+select {
+	@include rem(padding, 12px 24px);
+	background: $input-bg;
+	color: $input-color;
+	border: 1px solid $input-border;
+	line-height: normal;
+	display: block;
+	width: 100%;
+	box-shadow: $input-shadow;
+	transition: $input-transition;
 
 	&:focus {
-
+		border-color: $input-border-focus;
+		outline: none;
 	}
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
-	
+input[type="file"] {
+	&:hover { cursor: pointer; }
 }
 
-textarea {
-	
+input[type="search"] {
+	width: auto;
+	display: inline-block;
+}
+
+select {
+	height: 48px;
+}
+
+select[multiple],
+select[size] {
+	height: auto;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	width: auto;
+	display: inline-block;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	@include rem(padding, 12px 24px);
+	@include rem(font-size, 16px);
+	background: $form-button-background;
+	color: $form-button-color;
+	display: inline-block;
+	font-weight: 600;
+	text-transform: uppercase;
+	border: 0;
+	transition: $input-transition;
+
+	&:hover {
+		background: $brand-primary;
+		color: #333;
+	}
+}
+
+// WebKit-style focus
+// @link https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_tab-focus.scss [props]
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+	&:focus {
+		outline: thin dotted;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px;
+	}
 }

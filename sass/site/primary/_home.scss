@@ -11,16 +11,40 @@
 		h1 {
 			text-align: center;
 			@include rem(padding, 0 30px);
-			margin: 0;
 			@include rem(font-size, 54px);
 			line-height: 1;
 			color: white;
-			font-weight: 400;
+			width: 70%;
+			margin: 0 auto;
+
+			a {
+				font-size: 16px;
+				margin: 0 10px;
+
+				&.btn {
+					background: $brand-primary;
+					color: white;
+					text-transform: uppercase;
+					padding: 10px 25px;
+					font-family: "open sans";
+
+					&.outline {
+						background: transparent;
+						border: 1px solid white;
+						color: white;
+						@include transition(all 500ms ease-in-out);
+
+						&:hover {
+							border: 1px solid $brand-primary;
+							color: $brand-primary;
+						}
+					}
+				}
+			}
 		}
 	}
 
 	#main {
-		background: white;
 
 		.entry-header {
 			@include rem(margin-bottom, 30px);
