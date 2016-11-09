@@ -159,6 +159,7 @@ ol {
   list-style-type: none;
   margin: 0;
   padding: 0; }
+
 dl {
   margin-bottom: 0.8125rem; }
   dl dt {
@@ -734,6 +735,7 @@ button:focus {
   width: 49%;
   float: left;
   clear: left; }
+
 .ginput_complex .ginput_right {
   width: 49%;
   float: right;
@@ -1008,7 +1010,8 @@ a {
         left: -9999px;
         left: -999.9rem;
         top: 0; }
-      .main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+      .main-navigation ul ul li:hover > ul,
+      .main-navigation ul ul li.focus > ul {
         left: 100%; }
       .main-navigation ul ul a {
         width: 200px;
@@ -1051,11 +1054,13 @@ a {
   margin: 0 0 15px;
   margin: 0 0 1.5rem;
   overflow: hidden; }
+
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%; }
+
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -1267,6 +1272,7 @@ a {
 .wall #ppsw_social_wall .container .ppsw-card.timeline {
   background: #FF6B6B;
   padding: 20px; }
+
 .wall #ppsw_social_wall .container .ppsw-card .caption {
   background: #4ECDC4; }
 
@@ -1305,6 +1311,7 @@ a {
           .home .parallax-window h1 a.btn.outline:hover {
             border: 1px solid #FF6B6B;
             color: #FF6B6B; }
+
 .home #main .entry-header {
   margin-bottom: 30px;
   margin-bottom: 3rem; }
@@ -1329,6 +1336,7 @@ a {
       left: 50%;
       margin-left: -50px;
       margin-left: -5rem; }
+
 .home #main .entry-content {
   -webkit-column-count: 2;
   /* Chrome, Safari, Opera */
@@ -1368,6 +1376,7 @@ a {
       left: 50%;
       margin-left: -50px;
       margin-left: -5rem; }
+
 .about .entry-content {
   -webkit-column-count: 2;
   /* Chrome, Safari, Opera */
@@ -1379,6 +1388,7 @@ a {
   -moz-column-gap: 30px;
   /* Firefox */
   column-gap: 30px; }
+
 .about .clients {
   text-align: center;
   padding: 50px 0; }
@@ -1409,6 +1419,7 @@ a {
     list-style-type: none; }
     .about .clients ul li {
       margin-bottom: 30px; }
+
 .about .offerings {
   background: #C44D58;
   text-align: center;
@@ -1468,6 +1479,7 @@ a {
     .about .offerings ul li {
       margin-bottom: 0;
       color: WHITE; }
+
 .about .testimonials .next, .about .testimonials .prev {
   position: absolute;
   display: block;
@@ -1489,10 +1501,13 @@ a {
     margin-left: -10px;
     top: 50%;
     margin-top: -10px; }
+
 .about .testimonials .next {
   right: 0; }
+
 .about .testimonials .prev {
   left: 0; }
+
 .about .testimonials .testimonial {
   text-align: center;
   padding: 50px 0;
@@ -1557,6 +1572,7 @@ a {
 ============================*/
 .single-project img {
   display: block; }
+
 .single-project .parallax-window {
   height: 100vh; }
   .single-project .parallax-window .title {
@@ -1583,6 +1599,7 @@ a {
       border-radius: 50%;
       line-height: 55px;
       margin-top: 80px; }
+
 .single-project #main {
   padding: 0; }
   .single-project #main .entry-content {
@@ -1656,6 +1673,7 @@ a {
             margin-right: 0; } }
       .single-project #main .entry-content .details .shareme {
         margin-top: 20px; }
+
 .single-project section header {
   float: left;
   display: block;
@@ -1681,6 +1699,7 @@ a {
         margin-right: 0; } }
   .single-project section header p {
     color: #333; }
+
 .single-project section article {
   float: left;
   display: block;
@@ -1704,20 +1723,25 @@ a {
       width: 65.9574468085%; }
       .single-project section article:last-child {
         margin-right: 0; } }
+
 .single-project #challange .content {
   padding-top: 50px;
   padding-bottom: 50px; }
   .single-project #challange .content h3 {
     margin: 0 0 20px 0; }
+
 .single-project #solution .parallax-window {
   height: 500px; }
+
 .single-project #solution .content {
   padding-top: 50px;
   padding-bottom: 50px;
   background: #f9f9f9; }
+
 .single-project #featureone .content, .single-project #featuretwo .content {
   padding-top: 50px;
   padding-bottom: 50px; }
+
 .single-project #nextproject {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1745,6 +1769,7 @@ a {
 .blog #main #first, .blog #main #second {
   float: left;
   width: 100%; }
+
 .blog #main #first {
   margin-bottom: 60px;
   padding: 0 0 60px 0;
@@ -1802,6 +1827,26 @@ a {
           width: 65.9574468085%; }
           .blog #main #first article:first-of-type .entry-content:last-child {
             margin-right: 0; } }
+
+.blog #main article h2 {
+  line-height: 1.3; }
+
+.blog #main article .readmore {
+  display: inline-block;
+  margin-top: 20px;
+  background: #FF6B6B;
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px; }
+
+.single article h1 {
+  line-height: 1.3;
+  font-size: 27px;
+  margin: 0;
+  color: #FF6B6B; }
+
+.single article header {
+  margin-bottom: 20px; }
 
 /*=============================
 =            ABOUT            =
@@ -1999,6 +2044,7 @@ object {
   src: url("/fonts/slick.eot?#iefix") format("embedded-opentype"), url("/fonts/slick.woff") format("woff"), url("/fonts/slick.ttf") format("truetype"), url("/fonts/slick.svg#slick") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -2116,3 +2162,5 @@ object {
     .slick-dots li.slick-active button:before {
       color: black;
       opacity: 0.75; }
+
+/*# sourceMappingURL=style.css.map */

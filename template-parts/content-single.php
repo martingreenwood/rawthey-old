@@ -14,7 +14,7 @@
 
 	<header class="entry-header">
 
-		<?php the_post_thumbnail('full'); ?>
+		<?php //the_post_thumbnail('full'); ?>
 
 		<?php
 			if ( is_single() ) {
@@ -38,9 +38,8 @@
 
 	<div class="entry-content">
 		<?php
-			the_excerpt();
+			the_content();
 		?>
-		<a class="readmore" href="<?php the_permalink(); ?>">Continue Reading</a>
 	</div>
 
 </article>
